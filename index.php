@@ -8,16 +8,17 @@
 <input type="text" name="captcha">
 <p> Saisissez le code de sécurité </p>
 <input type="submit" name="valider">
-
                     
 <?php
-$_SESSION ['code']
+SESSION_START();
 /* SCRIPT FRONTAL AFFICHAGE DE CAPTCHA
 * AFFICHER UNE IMAGE GÉNÉRÉE EN PHP */
-
 echo "<img src='script-captchas.php' alt='captchas' />";
-if(isset($_POST{=0 {ECHO "Code de sécurité doit contenir une valeur !";}
- if(isset($_POST['ref=1']){echo "Code de sécurité n'est pas validé !"}
- if(isset($_POST['ref']) && S_POST['ref'] ==1){echo "Code valide" !;}
- 
-?>
+if(!isset($_POST['code']))
+	
+{echo "Code de sécurité doit contenir une valeur !";}
+ if(!isset[$POST['code']($_POST['code'])
+	 
+ {echo "Code de sécurité n'est pas validé !"}
+ if(!isset($SESSION['code']))
+ {echo "Code valide"!;}
