@@ -1,4 +1,5 @@
 # TP5
+//* INDEX.PHP *//
 Simple and easy to add captchas on your php project
 <html>
 <head>
@@ -24,5 +25,3 @@ if(!isset($_POST['code']))
  {echo "Code de sécurité n'est pas validé !"}
  if(!isset($SESSION['code']))
  {echo "Code valide"!;}
- 
- 
